@@ -1,0 +1,29 @@
+
+=== Summary ===
+
+Correctly Classified Instances         791               54.104  %
+Incorrectly Classified Instances       671               45.896  %
+Kappa statistic                          0.0821
+Mean absolute error                      0.4711
+Root mean squared error                  0.5281
+Relative absolute error                 94.2209 %
+Root relative squared error            105.6211 %
+Coverage of cases (0.95 level)          98.8372 %
+Mean rel. region size (0.95 level)      98.6662 %
+Total Number of Instances             1462     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.927     0.845      0.523     0.927     0.669      0.615    hyperpartisan
+                 0.155     0.073      0.681     0.155     0.252      0.615    mainstream
+Weighted Avg.    0.541     0.459      0.602     0.541     0.46       0.615
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 678  53 |   a = hyperpartisan
+ 618 113 |   b = mainstream
+
