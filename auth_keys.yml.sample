@@ -1,0 +1,4 @@
+ACCESS_TOKEN: access_token
+ACCESS_TOKEN_SECRET: access_token_secret
+CONSUMER_API_KEY: consumer_key
+CONSUMER_SECRET_KEY: consumer_secret
