@@ -10,6 +10,7 @@ logging.basicConfig(filename='logs/articles.log', filemode='a+',
                     level=logging.DEBUG)
 
 files = glob.glob("data/tweets/*")
+files = ['data/tweets/AlterNet.json.gz']
 
 for fname in files:
     outlet = fname.split('/')[-1].split('.')[0]
@@ -26,6 +27,7 @@ for fname in files:
             i = 0
             for url in urls:
                 eurl = url['expanded_url']
+                logging.info(f'{outlet} - {eurl}')
                 try:
                     res = requests.get(eurl, timeout=30)
                     a = open(f'{folder_name}/{tweet["id"]}-{i}', 'w')
